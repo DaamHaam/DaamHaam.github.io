@@ -11,3 +11,28 @@ items.forEach(item => {
     item.classList.toggle('completed');
   });
 });
+
+// Définition d'un tableau de tâches à faire
+const tasks = ['Acheter du lait', 'Appeler le plombier', 'Faire du sport'];
+
+// Stockage du tableau de tâches dans le sessionStorage sous la clé 'tasks'
+sessionStorage.setItem('tasks', JSON.stringify(tasks));
+
+// Récupération du tableau depuis le sessionStorage
+const storedTasks = JSON.parse(sessionStorage.getItem('tasks'));
+
+// Affichage du tableau dans la console
+console.log("HEY !");
+console.log("stored : " + storedTasks);
+
+
+
+
+// TESTER local storage
+// installer node.js et express pour projet séparément du projet dans github ??
+// contourner CORS pour localstorage dans PWA ? cache de service ? websql ?
+// tester console log dans le navigateur ?
+// Firebase pour pwa tuto https://firebase.google.com/docs/web/pwa?hl=fr
+
+
+// voir web app install banner pr faciliter l'installation de l'app
