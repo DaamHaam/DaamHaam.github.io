@@ -2,10 +2,10 @@ let particles = [];
 let particleColor;
 
 function setup() {
-  let canvas = createCanvas(600, 400);
+  let canvas = createCanvas(800, 200);
   canvas.parent("canvas-container");
-  particleColor = color(255, 0, 0);
-  for (let i = 0; i < 100; i++) {
+  particleColor = color(255, 250, 0);
+  for (let i = 0; i < 50; i++) {
     particles.push(new Particle());
   }
 }
@@ -24,12 +24,14 @@ class Particle {
     this.y = random(height);
     this.vx = random(-1, 1);
     this.vy = random(-1, 1);
+    this.particleColor = particleColor;
   }
 
   update() {
     this.x += this.vx;
     this.y += this.vy;
 
+    // rebond = inverse la vitesse verticale ou horiz
     if (this.x < 0 || this.x > width) {
       this.vx = -this.vx;
     }
@@ -39,7 +41,7 @@ class Particle {
   }
 
   show() {
-    fill(particleColor);
+    fill(this.particleColor);
     ellipse(this.x, this.y, 10);
   }
 }
@@ -47,4 +49,7 @@ class Particle {
 document.getElementById("color-form").addEventListener("submit", (event) => {
   event.preventDefault();
   particleColor = color(document.getElementById("color").value);
+  for (let p of particles) {
+    p.particleColor = particleColor;
+  }
 });
