@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de calcul mental</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jeu de calcul mental</h1>
+        <div id="operation"></div>
+        <input type="text" id="answer" placeholder="Entrez votre réponse">
+        <button id="submit">Valider</button>
+        <div id="timer">Temps restant: 30s</div>
+        <div id="score">Score: 0</div>
+        <div id="operation"></div>
+
+        <button id="restart" onclick="restartGame()">Relancer le jeu</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

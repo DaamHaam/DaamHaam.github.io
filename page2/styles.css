@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #a3d9ff;
+  margin: 0;
+}
+
+.container {
+  max-width: 400px; /* Ajout d'une largeur maximale pour une meilleure lisibilité sur les grands écrans */
+  width: 90%; /* Ajuste la largeur en fonction de la largeur de l'écran */
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2d74a0; /* Changement de couleur du titre */
+}
+
+#operation, #timer, #score {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #2d74a0; /* Changement de couleur du texte */
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0069d9;
+}
+
+/* Responsive pour smartphones */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  #operation, #timer, #score {
+    font-size: 18px;
+  }
+
+  input {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
