@@ -1,5 +1,5 @@
 let score = 0;
-let timeLeft = 30;
+let timeLeft = 40;
 let timer;
 
 function generateOperation() {
@@ -23,7 +23,7 @@ function checkAnswer() {
 
 function countdown() {
     timeLeft--;
-    document.getElementById('timer').innerText = `Temps restant: ${timeLeft}s`;
+    document.getElementById('timer').innerText = `${timeLeft}s`;
 
     if (timeLeft <= 0) {
         clearInterval(timer);
@@ -37,7 +37,7 @@ function restartGame() {
   score = 0;
   timeLeft = 30;
   document.getElementById('score').innerText = 'Score: 0';
-  document.getElementById('timer').innerText = 'Temps restant: 30s';
+  document.getElementById('timer').innerText = '40s';
   document.getElementById('submit').disabled = false;
   generateOperation();
   timer = setInterval(countdown, 1000);

@@ -25,11 +25,19 @@ h1 {
   color: #2d74a0; /* Changement de couleur du titre */
 }
 
-#operation, #timer, #score {
+#timer, #score {
   font-size: 24px;
   margin-bottom: 10px;
   color: #2d74a0; /* Changement de couleur du texte */
 }
+
+#operation {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2d74a0; /* Changement de couleur du texte */
+}
+
 
 input {
   display: block;
