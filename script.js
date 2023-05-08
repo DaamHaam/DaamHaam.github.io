@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const buttonsContainer = document.getElementById("buttons-container");
-    const totalPages = 3;
+    const totalPages = 4;
 
     for (let i = 1; i <= totalPages; i++) {
         const button = document.createElement("button");
