@@ -8,6 +8,9 @@ body {
     height: 80vh;
     margin: 0;
     padding-top: 100px;
+    /* pour masquer les barres de défilement pour le plein écran */
+    overflow: hidden;
+
 }
 
 .container {
@@ -35,7 +38,7 @@ h2 {
 }
 
 .timer {
-    font-size: 2rem;
+    font-size: 2.5rem;
     width: 90%;
     text-align: center;
 }
